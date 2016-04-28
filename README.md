@@ -6,17 +6,17 @@
 ## 1.驗證使用者輸入
 
 ##### 1-1.實作`function validate (inputValue) -> Boolean`
-當 inputValue 長度大於 3 的時候回傳 true(有效) 否則 false
+* 當 inputValue 長度大於 3 的時候回傳 true(有效) 否則 false
 
 ##### 1-2.運用 validate 檢查 todoInputEle 的 value 是否有效
-若有效則執行 `validateHintEle.className = "has-success"` 否則 `validateHintEle.className = "has-error"`
+* 若有效則執行 `validateHintEle.className = "has-success"` 否則 `validateHintEle.className = "has-error"`
 
 ___
 
 ## 2.點選新增按鈕時，儲存資料並顯示元件
 
 ##### 2-1.將新增的 TODO 用 object 表示（以下指稱`todoData`)，並存進陣列`todoDataArray`裡面
-。需有[敘述文字]以及[完成與否]兩屬性(物件的 key 請自己命名)。
+* 需有[敘述文字]以及[完成與否]兩屬性(物件的 key 請自己命名)。
 
 ##### 2-2. 用上一步驟的 object 裡的資料 創建 todo 的 `Element`
 * 結構：`<a href="#" class="list-group-item">TODO的敘述文字</a>`
