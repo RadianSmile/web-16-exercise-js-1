@@ -26,7 +26,7 @@ ___
 ##### 2-3.將創建的 todoElement 顯示在 `todoListEle` 裡。
 ##### 2-4.將`todoDataList`存進 `localStorage`
 
-___
+___ 
 
 ## 3. 網頁重新整理後 資料能重現
 
