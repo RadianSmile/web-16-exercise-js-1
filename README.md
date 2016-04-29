@@ -31,17 +31,19 @@ ___
 <a href="#" class="list-group-item">TODO的敘述文字</a>
 ```
 
-##### 2-3. 為此 todoElement 監聽 click 事件，觸發時：
-* 將對應的 `todoData` [完成與否] 值設定為完成狀態(true)
-* 呼叫方程式
-
+##### 2-3. 為此 todoElement 監聽 click 事件，觸發時請執行以下行為：
 ```javascript
+// 實作1. 將對應的 `todoData` [完成與否] 值設定為完成狀態(true)
+// 實做2. 呼叫下面的方程式
 updatetodoListEle(todoDataList);
 ```
 
-##### 2-4.將創建的 `todoElement` 顯示在 `todoListEle` 裡。
+##### 2-4.將創建的 todoElement 顯示到 todoListEle 裡面。
 
-##### 2-5.將`todoDataList`存進 `localStorage`
+##### 2-5.把使用者輸入的所有資料都存起來
+```javascript
+將 todoDataList 存進  localStorage
+```
 
 ___
 
@@ -54,12 +56,12 @@ function createElement (todoData:Object) -> Element
 
 ##### 3-2.實作方程式
 ```javascript
-function updatetodoListEle (todoDataList:Array)
+function updatetodoListEle (todoDataList:Array) -> undefined
+// 清空 todoListEle 內的所有子元素
+// 運用`createElement` 創建 todoDataList 裡的每一筆 todoData 的 `Element`
 ```
-* 清空 todoListEle 內的所有子元素
-* 運用`createElement` 創建 todoDataList 裡的每一筆 todoData 的 `Element`
 
-##### 3-3. 讀取 localStorage 裡的資料，並重新顯示。
+##### 3-3. 讀取並顯示 localStorage 裡的資料
 
 ___
 ### 剩餘說明
