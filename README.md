@@ -85,25 +85,26 @@ ___
 document.createElement()
 
 // 拿到 input 得值
-HTMLInputElement.value  
+document.getElementById("<input element id>").value  
 
 // HTMLElement 的 API
-Element.prototype.className = string : String
-Element.prototype.appendChild( ele : Element)
+document.getElementById("<whatever you want>").className = string : String
+document.getElementById("<whatever you want>").appendChild(  Element)
 
 // hyperlink element 的 API
-HTMLAnchorElement.prototype.href // 設定超連結
+document.getElementById("<anchor element id>").href // 設定超連結
 
 // array 新增子物件
-Array.prototype.push (  item : anyType )
-Array.prototype.length // 取得 Array 裡面物件的數量
+[].push (  item : anyType )
+[].length // 取得 Array 裡面物件的數量
 
 // 關於儲存資料
 localStorage.setItem( key : string , value : String)
-JSON.stringify( object : Object)
+JSON.stringify( object : Object) ;
 JSON.parse ( JSON_String : String )
 
 // 拿取每一個物件
+for 迴圈
 Array.prototype.forEach()
 ```
 
