@@ -1,7 +1,6 @@
 
 #WEB js exercise
-在這次的練習，可以體驗 js 如何在文件上處理資料的輸入與輸出。
-
+在這次的練習，可以體驗 js 如何在文件上處理資料的輸入與輸出。請打開`index.html` 並編輯 js/js.js 以完成以下要求。
 
 
 ## 1.驗證使用者輸入
@@ -100,7 +99,7 @@ Array.prototype.forEach()
 
 
 
-#### 剩餘說明
+## 剩餘說明
 ```javascript
 function validate (inputValue:string) -> Boolean
 ```
