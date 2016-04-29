@@ -64,13 +64,13 @@ function updatetodoListEle (todoDataList:Array) -> undefined
 ##### 3-3. 讀取並顯示 localStorage 裡的資料
 
 ___
-### 剩餘說明
+#### 剩餘說明
 ```javascript
 function validate (inputValue) -> Boolean
 ```
 代表輸入一個屬性為 string 變數 inputValue 會回傳一個 boolean
 
-### 文件中的名詞解釋
+#### 文件中的 JS 與網頁相關的 API
 
-##### ref : HTMLInputElement
-##### ref : Element
+[DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document) , [HTMLInputElement](https://developer.mozilla.org/zh-TW/docs/Web/API/HTMLInputElement) ,
+[Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
