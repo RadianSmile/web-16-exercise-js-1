@@ -20,10 +20,13 @@ ___
 
 ##### 2-2. 用上一步驟的 object 裡的資料 創建 todo 的 `Element`
 * 結構：`<a href="#" class="list-group-item">TODO的敘述文字</a>`
-* 此 element 監聽 click 事件，觸發時：
-	將對應的 `todoData` [完成與否] 值設定為完成狀態(true)
-	呼叫 `updatetodoListEle(todoDataList)`
+
+##### 2-2. 為此 element 監聽 click 事件，觸發時：
+* 將對應的 `todoData` [完成與否] 值設定為完成狀態(true)
+* 呼叫 `updatetodoListEle(todoDataList)`
+
 ##### 2-3.將創建的 todoElement 顯示在 `todoListEle` 裡。
+
 ##### 2-4.將`todoDataList`存進 `localStorage`
 
 ___
