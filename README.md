@@ -3,8 +3,6 @@
 在這次的練習，可以體驗 js 如何在文件上處理資料的輸入與輸出。
 
 
-
-
 ## 1.驗證使用者輸入
 
 ##### 1-1.實作 validate 方程式
@@ -13,7 +11,7 @@ function validate (inputValue:String) -> Boolean
 // 當 inputValue 長度大於 3 的時候回傳 true(有效) 否則 false
 ```
 
-##### 1-2.運用 validate 檢查 todoInputEle 的 value 是否有效
+##### 1-2.監聽 input 事件運用 validate 檢查 todoInputEle 的 value 是否有效
 ```javascript
 /*若有效則執行*/ validateHintEle.className = "has-success"
 /*否則*/ validateHintEle.className = "has-error"
