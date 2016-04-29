@@ -26,7 +26,7 @@ ___
 * 需有[敘述文字]以及[完成與否]兩屬性(物件的 key 請自己命名)。
 
 ##### 2-2. 用上一步驟的 object 裡的資料 創建 todo 的 `Element`
-* 他應該能長出以下結構
+* 必須要有以下結構
 ```html
 <a href="#" class="list-group-item">TODO的敘述文字</a>
 ```
