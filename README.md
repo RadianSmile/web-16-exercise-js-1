@@ -3,6 +3,7 @@
 在這次的練習，可以體驗 js 如何在文件上處理資料的輸入與輸出。
 
 
+
 ## 1.驗證使用者輸入
 
 ##### 1-1.實作 validate 方程式
@@ -11,19 +12,19 @@ function validate (inputValue:String) -> Boolean
 // 當 inputValue 長度大於 3 的時候回傳 true(有效) 否則 false
 ```
 
-##### 1-2.監聽 input 事件運用 validate 檢查 todoInputEle 的 value 是否有效
+##### 1-2.在 todoInputEle 上監聽 input 事件，運用 validate 方程式檢查使用者輸入的 value 是否有效
 ```javascript
 /*若有效則執行*/ validateHintEle.className = "has-success"
 /*否則*/ validateHintEle.className = "has-error"
 ```
 ___
 
-## 2.點選新增按鈕時，儲存資料並顯示元件
+## 2.點選新增按鈕時，儲存資料並顯示元件()
 
-##### 2-1.將新增的 TODO 用 object 表示（以下指稱`todoData`)，並存進陣列`todoDataArray`裡面
+##### 2-1.將新增的 TODO 用 object 表示（以下以變數`todoData`說名)，並存進陣列`todoDataArray`裡面
 * 需有[敘述文字]以及[完成與否]兩屬性(物件的 key 請自己命名)。
 
-##### 2-2. 用上一步驟的 object 裡的資料 創建 todo 的 `Element`
+##### 2-2. 用上一步驟的 object 裡的資料 創建 todoElement
 * 必須要有以下結構
 ```html
 <a href="#" class="list-group-item">TODO的敘述文字</a>
@@ -36,11 +37,11 @@ ___
 updatetodoListEle(todoDataList);
 ```
 
-##### 2-4.將創建的 todoElement 顯示到 todoListEle 裡面。
+##### 2-4.將此 todoElement 顯示到 todoListEle 裡面。
 
 ##### 2-5.把使用者輸入的所有資料都存起來
 ```javascript
-將 todoDataList 存進  localStorage
+想辦法將 todoDataList 存進  localStorage
 ```
 
 ___
@@ -62,11 +63,52 @@ function updatetodoListEle (todoDataList:Array) -> undefined
 ##### 3-3. 讀取並顯示 localStorage 裡的資料
 
 ___
+
+
+
+
+
+## 會用到的 API
+
+```javascript
+document.createElement()
+
+// 拿到 input 得值
+HTMLInputElement.value  
+
+// HTMLElement 的 API
+Element.prototype.className = string : String
+Element.prototype.appendChild( ele : Element)
+
+// hyperlink element 的 API
+HTMLAnchorElement.prototype.href // 設定超連結
+
+// array 新增子物件
+Array.prototype.push (  item : anyType )
+Array.prototype.length // 取得 Array 裡面物件的數量
+
+// 關於儲存資料
+localStorage.setItem( key : string , value : String)
+JSON.stringify( object : Object)
+JSON.parse ( JSON_String : String )
+
+// 拿取每一個物件
+Array.prototype.forEach()
+```
+
+
+
+
+
 #### 剩餘說明
+```javascript
+function validate (inputValue:string) -> Boolean
+```
+代表輸入一個屬性為 string 變數 inputValue 會回傳一個 boolean
 ```javascript
 function validate (inputValue) -> Boolean
 ```
-代表輸入一個屬性為 string 變數 inputValue 會回傳一個 boolean
+
 
 #### 文件中的 JS 與網頁相關的 API
 
