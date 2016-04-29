@@ -2,6 +2,18 @@
 #WEB js exercise
 在這次的練習，可以體驗 js 如何在文件上處理資料的輸入與輸出。請打開`index.html` 並編輯 js/js.js 以完成以下要求。
 
+注意，以下標記是說明文件寫法：
+
+```javascript
+// 代表 validate 方程式需要輸入一個屬性為 string 變數 inputValue ，執行結束會回傳一個 boolean，
+function validate (inputValue:string) -> Boolean
+// 真正的寫法會是以下
+function validate (inputValue){
+	//...
+	return false ;
+}
+```
+# Requirement
 
 ## 1.驗證使用者輸入
 
@@ -20,7 +32,7 @@ ___
 
 ## 2.點選新增按鈕時，儲存資料並顯示元件()
 
-##### 2-1.將新增的 TODO 用 object 表示（以下以變數`todoData`說名)，並存進陣列`todoDataArray`裡面
+##### 2-1.將新增的 TODO 用 object 表示（以下以變數`todoData`說明)，並存進陣列`todoDataArray`裡面
 * 需有[敘述文字]以及[完成與否]兩屬性(物件的 key 請自己命名)。
 
 ##### 2-2. 用上一步驟的 object 裡的資料 創建 todoElement
@@ -104,10 +116,6 @@ Array.prototype.forEach()
 function validate (inputValue:string) -> Boolean
 ```
 代表輸入一個屬性為 string 變數 inputValue 會回傳一個 boolean
-```javascript
-function validate (inputValue) -> Boolean
-```
-
 
 #### 文件中的 JS 與網頁相關的 API
 
