@@ -38,7 +38,10 @@ ___
 ##### 2-2. 用上一步驟的 object 裡的資料 創建 todoElement
 * 必須要有以下結構
 ```html
+//如果他的[完成與否]狀態為未完成，結構如下
 <a href="#" class="list-group-item">TODO的敘述文字</a>
+//如果他的[完成與否]狀態為完成，則結構如下
+<a href="#" class="list-group-item list-group-item-success">TODO的敘述文字</a>
 ```
 
 ##### 2-3. 為此 todoElement 監聽 click 事件，觸發時請執行以下行為：
